@@ -1,0 +1,25 @@
+/****logo styling*********/
+
+nav ul {
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+}
+nav li {
+  display: inline-block;
+  margin: 10px;
+}
+/**********content*********/
+
+h2 {
+  margin-bottom: 1rem;
+}
+.content {
+}
+
+/***Footer styling****/
+.footer {
+  position: absolute;
+  bottom: 10px;
+}

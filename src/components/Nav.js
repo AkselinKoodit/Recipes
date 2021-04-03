@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import "./components.css";
 const Nav = () => {
   return (
-    <div>
+    <nav>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -13,7 +14,7 @@ const Nav = () => {
           <Link to="/about">About</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

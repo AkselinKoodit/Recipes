@@ -1,7 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Main from "./Main";
-import Nav from "./Nav";
+import About from "./About";
+import Recipes from "./Recipes";
 
 const Home = () => {
   return (
@@ -10,31 +11,29 @@ const Home = () => {
     </div>
   );
 };
-const Recipes = () => {
+
+const Info = () => {
   return (
     <div>
-      <h1>Recipes will be here</h1>
+      <About />
     </div>
   );
 };
-const About = () => {
+const Content = () => {
   return (
     <div>
-      <p>
-        This is a study project for React course at Helsinki Business College
-      </p>
+      <Recipes />
     </div>
   );
 };
 
 const RouterMain = () => {
   return (
-    <div>
-      <Nav />
+    <div className="content">
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/recipes" component={Recipes} />
-        <Route path="/about" component={About} />
+        <Route path="/recipes" component={Content} />
+        <Route path="/about" component={Info} />
       </Switch>
     </div>
   );
