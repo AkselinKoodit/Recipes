@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import Recipecard from "./Recipecard";
 
-class Recipes extends Component {
+class RecipesList extends Component {
   state = {
     prepTime: "",
     ingredient1: "",
@@ -19,20 +20,10 @@ class Recipes extends Component {
   render() {
     return (
       <div>
-        <ul>
-          {recipes.map((recipe) => {
-            return (
-              <li key={recipe.name}>
-                {recipe.name}
-                {recipe.prepTime}
-                {recipe.ingredient1}
-              </li>
-            );
-          })}
-        </ul>
+        <Recipecard recipes={this.state.recipes} />
       </div>
     );
   }
 }
 
-export default Recipes;
+export default RecipesList;

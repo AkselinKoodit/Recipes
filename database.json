@@ -1,36 +1,33 @@
 {
     "recipes" : [
-        {   
-            "name":"spinach crepes",
-            "prepTime":"15 min",
-            "ingredient1":"spinach, 150gr",
-            "ingredient2":"four, 2dl",
-            "ingredien3":"oil, 2tbs",
-            "instructions": "mix and pan fry"
+
+        {
+          "name": "spinach crepes",
+          "image": [
+            "https://source.unsplash.com/yxZSAjyToP4"
+          ],
+          "prepTime": "15min",
+          "servings": "2",
+          "ingredients": [
+            "spinach",
+            "oil",
+            "flour"
+          ],
+          "instructions": "mix everything and pan fry it"
         },
-        {   
-            "name":"spinach crepes",
-            "prepTime":"20 min",
-            "ingredient1":"spinach, 150gr",
-            "ingredient2":"four, 2dl",
-            "ingredien3":"oil, 2tbs",
-            "instructions": "mix and pan fry"
-        },
-        {   
-            "name":"spinach crepes",
-            "prepTime":"15 min",
-            "ingredient1":"spinach, 150gr",
-            "ingredient2":"four, 2dl",
-            "ingredien3":"oil, 2tbs",
-            "instructions": "mix and pan fry"
-        },
-        {   
-            "name":"spinach crepes",
-            "prepTime":"15 min",
-            "ingredient1":"spinach, 150gr",
-            "ingredient2":"four, 2dl",
-            "ingredien3":"oil, 2tbs",
-            "instructions": "mix and pan fry"
+        {
+          "name": "banana pancakes",
+          "image": [
+            "https://source.unsplash.com/yxZSAjyToP4"
+          ],
+          "prepTime": "15min",
+          "servings": "2",
+          "ingredients": [
+            "banana",
+            "egg",
+            "pinch of salt"
+          ],
+          "instructions": "mix everything and pan fry it"
         }
     ]
 }

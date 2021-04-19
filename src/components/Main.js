@@ -2,7 +2,8 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import Recipes from "./Recipes";
+import Recipes from "./RecipesList";
+import RecipesStateless from "./Recipecard";
 
 const Landing = () => {
   return (
@@ -19,20 +20,15 @@ const Info = () => {
     </div>
   );
 };
-const Content = () => {
-  return (
-    <div>
-      <Recipes />
-    </div>
-  );
-};
 
 const Main = () => {
   return (
     <div>
+      {/* <RecipesStateless recipes={this.state.recipes} /> */}
       <Switch>
         <Route path="/" exact component={Landing} />
-        <Route path="/recipes" component={Content} />
+        {/* <Route path="/recipes" component={Recipes} /> */}
+
         <Route path="/about" component={Info} />
       </Switch>
     </div>
