@@ -1,12 +1,38 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Recipes = () => {
-  return (
-    <div>
-      <h2>Recipes</h2>
-      <p>Recipes will be displayed here</p>
-    </div>
-  );
-};
+class Recipes extends Component {
+  state = {
+    prepTime: "",
+    ingredient1: "",
+    ingredient2: "",
+    ingredien3: "",
+    instructions: "",
+    recipes: [],
+  };
+
+  componentDidMount() {
+    fetch("http://localhost:3003/recipes")
+      .then((response) => response.json())
+      .then((data) => this.setState({ recipes: data }));
+  }
+
+  render() {
+    return (
+      <div>
+        <ul>
+          {recipes.map((recipe) => {
+            return (
+              <li key={recipe.name}>
+                {recipe.name}
+                {recipe.prepTime}
+                {recipe.ingredient1}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
+  }
+}
 
 export default Recipes;

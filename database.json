@@ -1,3 +1,36 @@
 {
-
+    "recipes" : [
+        {   
+            "name":"spinach crepes",
+            "prepTime":"15 min",
+            "ingredient1":"spinach, 150gr",
+            "ingredient2":"four, 2dl",
+            "ingredien3":"oil, 2tbs",
+            "instructions": "mix and pan fry"
+        },
+        {   
+            "name":"spinach crepes",
+            "prepTime":"20 min",
+            "ingredient1":"spinach, 150gr",
+            "ingredient2":"four, 2dl",
+            "ingredien3":"oil, 2tbs",
+            "instructions": "mix and pan fry"
+        },
+        {   
+            "name":"spinach crepes",
+            "prepTime":"15 min",
+            "ingredient1":"spinach, 150gr",
+            "ingredient2":"four, 2dl",
+            "ingredien3":"oil, 2tbs",
+            "instructions": "mix and pan fry"
+        },
+        {   
+            "name":"spinach crepes",
+            "prepTime":"15 min",
+            "ingredient1":"spinach, 150gr",
+            "ingredient2":"four, 2dl",
+            "ingredien3":"oil, 2tbs",
+            "instructions": "mix and pan fry"
+        }
+    ]
 }
