@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Recipecard from "./Recipecard";
 import SearchBox from "./SearchBox";
+import "./components.css";
 
 class RecipesList extends Component {
   state = {

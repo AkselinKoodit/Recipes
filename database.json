@@ -28,6 +28,20 @@
             "pinch of salt"
           ],
           "instructions": "mix everything and pan fry it"
+        },
+        {
+          "name": "banana pancakes",
+          "image": [
+            "https://source.unsplash.com/yxZSAjyToP4"
+          ],
+          "prepTime": "15min",
+          "servings": "2",
+          "ingredients": [
+            "banana",
+            "egg",
+            "pinch of salt"
+          ],
+          "instructions": "mix everything and pan fry it"
         }
     ]
 }
