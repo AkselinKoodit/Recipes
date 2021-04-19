@@ -1,14 +1,40 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Recipes from "./Recipes";
+
+const Landing = () => {
+  return (
+    <div>
+      <Home />
+    </div>
+  );
+};
+
+const Info = () => {
+  return (
+    <div>
+      <About />
+    </div>
+  );
+};
+const Content = () => {
+  return (
+    <div>
+      <Recipes />
+    </div>
+  );
+};
 
 const Main = () => {
   return (
     <div>
-      <h2>Main page</h2>
-      <div>
-        Welcome to my recipes page! Here I'll use an api call to bring you the
-        finest, most delicious dishes to you and by using React library (and
-        css) I'll make this a thing of beauty :)
-      </div>
+      <Switch>
+        <Route path="/" exact component={Landing} />
+        <Route path="/recipes" component={Content} />
+        <Route path="/about" component={Info} />
+      </Switch>
     </div>
   );
 };

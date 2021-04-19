@@ -15,11 +15,9 @@ nav li {
 h2 {
   margin-bottom: 1rem;
 }
-.content {
-}
 
 /***Footer styling****/
-.footer {
+footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 2rem;
 }

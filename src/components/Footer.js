@@ -3,9 +3,9 @@ import "./components.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer>
       <p>This tiny thing here is the footer</p>
-    </div>
+    </footer>
   );
 };
 
