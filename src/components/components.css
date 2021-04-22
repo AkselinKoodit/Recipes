@@ -18,14 +18,13 @@ h2 {
 
 /***Footer styling****/
 footer {
-  position: absolute;
-  bottom: 2rem;
+  margin-top: 10rem;
 }
 
 /***********recipe card styling*******/
 .recipecard {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  /* flex-direction: row; */
   background-color: lightgreen;
   box-shadow: 0 0 5px #333;
   padding: 1rem;
@@ -33,6 +32,7 @@ footer {
   border-radius: 4px;
   text-align: center;
   align-items: center;
+  height: 400px;
 }
 .recipecard img {
   width: 200px;
@@ -46,8 +46,64 @@ button {
   margin: 1rem;
   padding: 1rem;
   background-color: burlywood;
+  font-family: "Comfortaa", cursive;
 }
 input {
   margin: 1rem;
   padding: 5px;
+  font-family: "Comfortaa", cursive;
+}
+textarea {
+  margin: 1rem;
+  padding: 5px;
+}
+/******form styling**********/
+
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-style: dotted;
+  border-color: rgb(132, 223, 253);
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+label {
+  margin: 1rem;
+  padding: 5px;
+}
+.newRecipePage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.view {
+  text-align: end;
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+}
+/*******popup*********/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 5px #333;
+  margin: 0 auto;
 }

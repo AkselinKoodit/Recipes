@@ -4,14 +4,24 @@ import "./components.css";
 const Recipecard = ({ recipes }) => {
   return (
     <div className="recipepage">
-      <h1>My json data</h1>
       <ul className="recipelistlist">
         {recipes.map((recipe) => {
           return (
             <li key={recipe.name} className="recipecard">
-              {recipe.name}
-              {recipe.prepTime}
-              {recipe.ingredients[0]}
+              <h3>{recipe.name}</h3>
+              <img
+                src={`https://source.unsplash.com/1600x900/?${recipe.name}`}
+                alt={recipe.name}
+              />
+              <div>Prep time: {recipe.prepTime}</div>
+              <div>
+                Ingredients:{" "}
+                {recipe.ingredients[0] +
+                  ", " +
+                  recipe.ingredients[1] +
+                  " and " +
+                  recipe.ingredients[2]}
+              </div>
             </li>
           );
         })}

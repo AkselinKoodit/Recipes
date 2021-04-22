@@ -3,9 +3,7 @@
 
         {
           "name": "spinach crepes",
-          "image": [
-            "https://source.unsplash.com/yxZSAjyToP4"
-          ],
+          "image":"https://source.unsplash.com/yxZSAjyToP4",
           "prepTime": "15min",
           "servings": "2",
           "ingredients": [
@@ -17,9 +15,7 @@
         },
         {
           "name": "banana pancakes",
-          "image": [
-            "https://source.unsplash.com/yxZSAjyToP4"
-          ],
+          "image": "https://source.unsplash.com/yxZSAjyToP4",
           "prepTime": "15min",
           "servings": "2",
           "ingredients": [
@@ -30,16 +26,31 @@
           "instructions": "mix everything and pan fry it"
         },
         {
-          "name": "banana pancakes",
-          "image": [
+          "name": "chicken soup",
+          "image":
             "https://source.unsplash.com/yxZSAjyToP4"
-          ],
-          "prepTime": "15min",
+          ,
+          "prepTime": "30min",
           "servings": "2",
           "ingredients": [
-            "banana",
-            "egg",
-            "pinch of salt"
+            "chicken",
+            "vegetables",
+            "water",
+            "spices"
+          ],
+          "instructions": "mix everything and pan fry it"
+        },
+        {
+          "name": "bread",
+          "image":
+            "https://source.unsplash.com/yxZSAjyToP4",
+          "prepTime": "60min",
+          "servings": "2",
+          "ingredients": [
+            "flour",
+            "salt",
+            "water",
+            "yeast"
           ],
           "instructions": "mix everything and pan fry it"
         }

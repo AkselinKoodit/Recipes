@@ -5,11 +5,19 @@ import "./components.css";
 
 class RecipesList extends Component {
   state = {
-    prepTime: "",
-    ingredient1: "",
-    ingredient2: "",
-    ingredien3: "",
-    instructions: "",
+    searchInput: "",
+    inputdata: {
+      recipeName: "",
+      image: "",
+      prepTime: "",
+      servings: "",
+      ingredient1: "",
+      ingredient2: "",
+      ingredient3: "",
+      ingredient4: "",
+      ingredient5: "",
+      instructions: "",
+    },
     recipes: [],
   };
 
@@ -18,6 +26,7 @@ class RecipesList extends Component {
       .then((response) => response.json())
       .then((data) => this.setState({ recipes: data }));
   }
+
   searchValueHandler = (event) => {
     console.log("input was used");
     this.setState({
@@ -27,23 +36,25 @@ class RecipesList extends Component {
   };
 
   render() {
-    // const recipeFilter = this.state.recipes.filter((recipe) => {
-    //   return recipe.name
-    //     .toLowerCase()
-    //     .includes(this.state.searchInput.toLowerCase());
-    // });
-    // const recipesList = recipeFilter.map((recipe) => {
-    //   return <Recipecard name={recipe.name} />;
-    // });
+    const recipeFilter = this.state.recipes.filter((recipe) => {
+      return recipe.name
+        .toLowerCase()
+        .includes(this.state.searchInput.toLowerCase());
+    });
+
+    const recipeList = recipeFilter.map((recipe) => {
+      return;
+      <Recipecard name={recipe.name} key={recipe.name} />;
+    });
 
     return (
       <div>
+        <h1>My recipes</h1>
         <SearchBox search={this.searchValueHandler} />
-
+        <div classname="recipelist">searcresults:{recipeList}</div>
         <Recipecard recipes={this.state.recipes} />
       </div>
     );
-    return <div></div>;
   }
 }
 
