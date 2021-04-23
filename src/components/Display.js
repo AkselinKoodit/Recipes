@@ -1,18 +1,12 @@
 import React from "react";
 
-const Display = ({
-  recipeName,
-  image,
-  prepTime,
-  ingredient1,
-  instructions,
-}) => {
+const Display = ({ name, image, prepTime, ingredient1, instructions }) => {
   return (
     <div className="view">
       <div className="notepad">
         <h4>Check your input:</h4>
         <p>
-          Name: <span>{recipeName}</span>
+          Name: <span>{name}</span>
         </p>
         <p>
           Image: <span>{image}</span>

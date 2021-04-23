@@ -12,8 +12,8 @@ const AddData = ({ submit, fill }) => {
             <input
               type="text"
               placeholder="example"
-              name="recipeName"
-              id="recipename"
+              name="name"
+              id="name"
               onChange={fill}
               required
             />
@@ -39,7 +39,6 @@ const AddData = ({ submit, fill }) => {
               max="999"
               min="0"
               onChange={fill}
-              required
             />
           </div>
           <div>
@@ -52,7 +51,6 @@ const AddData = ({ submit, fill }) => {
               max="99"
               min="0"
               onChange={fill}
-              required
             />
           </div>
           <div>
@@ -63,24 +61,43 @@ const AddData = ({ submit, fill }) => {
               placeholder="gabbage"
               id="ingredient1"
               onChange={fill}
-              required
             />
           </div>
           <div>
-            <label htmlFor="i2">Ingredient 2:</label>
-            <input type="text" name="i2" id="i2" onChange={fill} />
+            <label htmlFor="ingredient2">Ingredient 2:</label>
+            <input
+              type="text"
+              name="ingredient2"
+              id="ingredient2"
+              onChange={fill}
+            />
           </div>
           <div>
-            <label htmlFor="i3">Ingredient 3:</label>
-            <input type="text" name="i3" id="i3" onChange={fill} />
+            <label htmlFor="ingredient3">Ingredient 3:</label>
+            <input
+              type="text"
+              name="ingredient3"
+              id="ingredient3"
+              onChange={fill}
+            />
           </div>
           <div>
-            <label htmlFor="i4">Ingredient 4 (optional):</label>
-            <input type="text" name="i4" id="i4" onChange={fill} />
+            <label htmlFor="ingredient4">Ingredient 4 (optional):</label>
+            <input
+              type="text"
+              name="ingredient4"
+              id="ingredient4"
+              onChange={fill}
+            />
           </div>
           <div>
-            <label htmlFor="i5">Ingredient 5 (optional):</label>
-            <input type="text" name="i5" id="i5" onChange={fill} />
+            <label htmlFor="ingredient5">Ingredient 5 (optional):</label>
+            <input
+              type="text"
+              name="ingredient5"
+              id="ingredient5"
+              onChange={fill}
+            />
           </div>
           <div>
             <label htmlFor="instructions">Instructions:</label>
@@ -92,7 +109,7 @@ const AddData = ({ submit, fill }) => {
               required
             ></textarea>
           </div>
-          <input type="submit" value="Post the recipe" />
+          <input type="submit" value="Next" />
         </form>
       </div>
     </div>

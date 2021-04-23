@@ -5,23 +5,13 @@ const closeHandler = () => {
   window.location.reload();
 };
 
-const Popup = ({
-  recipeName,
-  image,
-  prepTime,
-  ingredient1,
-  instructions,
-  submit,
-}) => {
+const Popup = ({ name, instructions, prepTime, ingredient1, submit }) => {
   return (
     <div className="overlay">
       <div className="popup">
         <h1>Your recipe:</h1>
         <p>
-          Name: <span>{recipeName}</span>
-        </p>
-        <p>
-          Image: <span>{image}</span>
+          Name: <span>{name}</span>
         </p>
         <p>
           Preparation time: <span>{prepTime}</span>

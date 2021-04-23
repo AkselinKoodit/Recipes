@@ -7,22 +7,25 @@ const Recipecard = ({ recipes }) => {
       <ul className="recipelistlist">
         {recipes.map((recipe) => {
           return (
-            <li key={recipe.name} className="recipecard">
+            <div key={recipe.name} className="recipecard">
               <h3>{recipe.name}</h3>
               <img
                 src={`https://source.unsplash.com/1600x900/?${recipe.name}`}
                 alt={recipe.name}
               />
-              <div>Prep time: {recipe.prepTime}</div>
-              <div>
-                Ingredients:{" "}
-                {recipe.ingredients[0] +
-                  ", " +
-                  recipe.ingredients[1] +
-                  " and " +
-                  recipe.ingredients[2]}
-              </div>
-            </li>
+              <p>Preparation time: {recipe.prepTime}</p>
+              <hr></hr>
+              <p>Servings: {recipe.servings}</p>
+              <hr></hr>
+              <p>Ingredients:</p>
+              <ul className="list">
+                <li>{recipe.ingredient1}</li>
+                <li>{recipe.ingredient2}</li>
+                <li>{recipe.ingredient3}</li>
+              </ul>
+              <hr></hr>
+              <div>Instructions: {recipe.instructions}</div>
+            </div>
           );
         })}
       </ul>

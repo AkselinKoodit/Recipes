@@ -1,58 +1,77 @@
 {
-    "recipes" : [
-
-        {
-          "name": "spinach crepes",
-          "image":"https://source.unsplash.com/yxZSAjyToP4",
-          "prepTime": "15min",
-          "servings": "2",
-          "ingredients": [
-            "spinach",
-            "oil",
-            "flour"
-          ],
-          "instructions": "mix everything and pan fry it"
-        },
-        {
-          "name": "banana pancakes",
-          "image": "https://source.unsplash.com/yxZSAjyToP4",
-          "prepTime": "15min",
-          "servings": "2",
-          "ingredients": [
-            "banana",
-            "egg",
-            "pinch of salt"
-          ],
-          "instructions": "mix everything and pan fry it"
-        },
-        {
-          "name": "chicken soup",
-          "image":
-            "https://source.unsplash.com/yxZSAjyToP4"
-          ,
-          "prepTime": "30min",
-          "servings": "2",
-          "ingredients": [
-            "chicken",
-            "vegetables",
-            "water",
-            "spices"
-          ],
-          "instructions": "mix everything and pan fry it"
-        },
-        {
-          "name": "bread",
-          "image":
-            "https://source.unsplash.com/yxZSAjyToP4",
-          "prepTime": "60min",
-          "servings": "2",
-          "ingredients": [
-            "flour",
-            "salt",
-            "water",
-            "yeast"
-          ],
-          "instructions": "mix everything and pan fry it"
-        }
-    ]
+  "recipes": [
+    {
+      "id": 1,
+      "name": "spinach crepes",
+      "prepTime": "15min",
+      "servings": "2",
+      "ingredient1": "spinach",
+      "ingredient2": "oil",
+      "ingredient3": "flour",
+      "instructions": "mix everything and pan fry it"
+    },
+    {
+      "id": 2,
+      "name": "banana pancakes",
+      "prepTime": "15min",
+      "servings": "2",
+      "ingredient1": "banana",
+      "ingredient2": "egg",
+      "ingredient3": "pinch of salt",
+      "instructions": "mix everything and pan fry it"
+    },
+    {
+      "id": 3,
+      "name": "chicken soup",
+      "prepTime": "25min",
+      "servings": "4",
+      "ingredient1": "chicken",
+      "ingredient2": "vegetables",
+      "ingredient3": "water",
+      "ingredient4": "spices",
+      "instructions": "mix everything and boil it"
+    },
+    {
+      "id": 4,
+      "name": "bread",
+      "ingredient1": "flour",
+      "ingredient2": "salt",
+      "ingredient3": "water",
+      "ingredient4":"yeast",
+      "prepTime": "60min",
+      "servings": "4",
+      "instructions": "bake it"
+    },
+    {
+      "instructions": "boil gabbage, stuff it, roll it and bake in over 30min",
+      "name": "spring rolls",
+      "ingredient1": "gabbage",
+      "ingredient2": "stuffing",
+      "ingredient3": "minced meat",
+      "id": 5,
+      "prepTime": "15min",
+      "servings": "2"
+    },
+    {
+      "name": "cinnmon rolls",
+      "prepTime": "15min",
+      "servings": "2",
+      "instructions": "mix butter, flour and stuff and bake",
+      "ingredient1": "cinnamon",
+      "ingredient2": "flour",
+      "ingredient3": "egg",
+      "ingredient4":"butter",
+      "id": 6
+    },
+    {
+      "name": "salmon in oven",
+      "instructions": "plenty of salt on the fish, then thor it into oven for 20min",
+      "prepTime": "40",
+      "servings": "4",
+      "ingredient1": "salmon",
+      "ingredient2": "salt",
+      "ingredient3": "pepper",
+      "id": 7
+    }
+  ]
 }

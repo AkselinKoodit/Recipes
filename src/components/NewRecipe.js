@@ -7,8 +7,7 @@ import Popup from "./Popup";
 class NewRecipe extends Component {
   state = {
     inputdata: {
-      recipeName: "",
-      image: "",
+      name: "",
       prepTime: "",
       servings: "",
       ingredient1: "",
@@ -33,6 +32,7 @@ class NewRecipe extends Component {
       inputdata: { ...this.state.inputdata, [e.target.name]: e.target.value },
     });
   };
+
   popupHandler = (e) => {
     this.setState({ showPopup: true });
     e.preventDefault();

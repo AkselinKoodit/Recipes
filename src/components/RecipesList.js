@@ -7,8 +7,7 @@ class RecipesList extends Component {
   state = {
     searchInput: "",
     inputdata: {
-      recipeName: "",
-      image: "",
+      name: "",
       prepTime: "",
       servings: "",
       ingredient1: "",
@@ -51,7 +50,7 @@ class RecipesList extends Component {
       <div>
         <h1>My recipes</h1>
         <SearchBox search={this.searchValueHandler} />
-        <div classname="recipelist">searcresults:{recipeList}</div>
+        <div className="recipelist">searcresults:{recipeList}</div>
         <Recipecard recipes={this.state.recipes} />
       </div>
     );
