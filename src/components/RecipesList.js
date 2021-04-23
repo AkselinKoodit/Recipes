@@ -42,15 +42,14 @@ class RecipesList extends Component {
     });
 
     const recipeList = recipeFilter.map((recipe) => {
-      return;
-      <Recipecard name={recipe.name} key={recipe.name} />;
+      return <Recipecard name={recipe.name} key={recipe.name} />;
     });
 
     return (
       <div>
         <h1>My recipes</h1>
         <SearchBox search={this.searchValueHandler} />
-        <div className="recipelist">searcresults:{recipeList}</div>
+        <div className="recipelist">{recipeList}</div>
         <Recipecard recipes={this.state.recipes} />
       </div>
     );

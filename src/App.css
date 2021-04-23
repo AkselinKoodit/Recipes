@@ -6,8 +6,8 @@ body {
   font-family: "Comfortaa", cursive;
   background-color: rgb(196, 240, 255);
   margin-top: 1rem;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   line-height: 1.6;
 }
 .header {
@@ -21,6 +21,7 @@ nav ul {
 a:link {
   text-decoration: none;
 }
+
 nav li {
   display: inline-block;
 }
