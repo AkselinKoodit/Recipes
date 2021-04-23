@@ -47,6 +47,9 @@ h3 {
 .recipecard img {
   width: 200px;
 }
+.recipeImg {
+  text-align: center;
+}
 .recipelistlist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

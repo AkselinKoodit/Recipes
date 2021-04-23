@@ -9,10 +9,12 @@ const Recipecard = ({ recipes }) => {
           return (
             <div key={recipe.name} className="recipecard">
               <h3>{recipe.name}</h3>
-              <img
-                src={`https://source.unsplash.com/1600x900/?${recipe.name}`}
-                alt={recipe.name}
-              />
+              <div className="recipeImg">
+                <img
+                  src={`https://source.unsplash.com/1600x900/?${recipe.name}`}
+                  alt={recipe.name}
+                />
+              </div>
               <p>Preparation time: {recipe.prepTime}</p>
               <hr></hr>
               <p>Servings: {recipe.servings}</p>
@@ -22,6 +24,8 @@ const Recipecard = ({ recipes }) => {
                 <li>{recipe.ingredient1}</li>
                 <li>{recipe.ingredient2}</li>
                 <li>{recipe.ingredient3}</li>
+                {recipe.ingredient4 && <li>{recipe.ingredient4}</li>}
+                {recipe.ingredient5 && <li>{recipe.ingredient5}</li>}
               </ul>
               <hr></hr>
               <div>Instructions: {recipe.instructions}</div>
