@@ -84,6 +84,54 @@
       "ingredient5": "creme fraiché",
       "instructions": "slice and fry eggplant in oil. Add tomato sauce and spices and let simmer for 20min. Crate mozzarella into creme fraiche and mix it up. Add sauce, pasta, green pesto and white sauce in layers on a dish and put it to oven in 200C for 45min. ",
       "id": 8
+    },
+    {
+      "name": "mashed potato",
+      "prepTime": "30",
+      "servings": "4",
+      "ingredient1": "potato",
+      "ingredient2": "butter",
+      "ingredient3": "milk",
+      "ingredient4": "water",
+      "ingredient5": "",
+      "instructions": "Boil potatoes like forever, add plenmty of butter, mash that shit and voilá",
+      "id": 9
+    },
+    {
+      "name": "lettutaikina",
+      "prepTime": "60",
+      "servings": "4",
+      "ingredient1": "jauhoja",
+      "ingredient2": "maitoa",
+      "ingredient3": "voita",
+      "ingredient4": "munia",
+      "ingredient5": "",
+      "instructions": "sekoita ja, anna turvota ja paista voissa pannulla",
+      "id": 10
+    },
+    {
+      "name": "halloumi stew",
+      "prepTime": "60",
+      "servings": "4",
+      "ingredient1": "halloumi",
+      "ingredient2": "tomatosauce",
+      "ingredient3": "eggplant",
+      "ingredient4": "cumin",
+      "ingredient5": "",
+      "instructions": "prepare it and lurps!",
+      "id": 11
+    },
+    {
+      "name": "risotto",
+      "prepTime": "60",
+      "servings": "4",
+      "ingredient1": "arborio rice",
+      "ingredient2": "parmesan",
+      "ingredient3": "butter",
+      "ingredient4": "water",
+      "ingredient5": "spices",
+      "instructions": "white wine on pan, add rice. Add stock little by little.",
+      "id": 12
     }
   ]
 }

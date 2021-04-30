@@ -26,7 +26,7 @@ footer {
 .recipecard {
   display: block;
   /* flex-direction: row; */
-  background-color: lightgreen;
+  background-color: #f3c654;
   box-shadow: 0 0 5px #333;
   padding: 1rem;
   margin: 1rem;
@@ -61,6 +61,7 @@ button {
   padding: 1rem;
   background-color: burlywood;
   font-family: "Comfortaa", cursive;
+  border-radius: 4px;
 }
 input {
   margin: 1rem;
@@ -107,7 +108,7 @@ ul {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +125,7 @@ ul {
   box-shadow: 0 0 5px #333;
   margin: 0 auto;
 }
+
 button:hover {
   background-color: blanchedalmond;
   border: #333 3px solid;

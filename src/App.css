@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Comfortaa", cursive;
-  background-color: rgb(196, 240, 255);
+  background-color: #f5e8c5;
   margin-top: 1rem;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -27,4 +27,8 @@ nav li {
 }
 .main {
   margin-top: 5vh;
+}
+a.active {
+  color: #e07400;
+  font-weight: bold;
 }

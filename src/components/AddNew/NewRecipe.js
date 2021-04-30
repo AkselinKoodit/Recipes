@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AddData from "./AddData";
-import Display from "./Display";
-import "./components.css";
+import Display from "../Display";
+import "../components.css";
 import Popup from "./Popup";
 
 class NewRecipe extends Component {
@@ -10,6 +10,7 @@ class NewRecipe extends Component {
       name: "",
       prepTime: "",
       servings: "",
+      image: "",
       ingredient1: "",
       ingredient2: "",
       ingredient3: "",
