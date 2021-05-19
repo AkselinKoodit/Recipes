@@ -5,9 +5,29 @@
       "name": "spinach crepes",
       "prepTime": "15min",
       "servings": "2",
-      "ingredient1": "spinach",
-      "ingredient2": "oil",
-      "ingredient3": "flour",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "spinach",
+          "quantity": "150gr"
+        },
+        {
+          "id": 2,
+          "ingredientName": "milk",
+          "quantity": "4dl"
+        },
+        {
+          "id": 3,
+          "ingredientName": "eggs",
+          "quantity": "1"
+        },
+        {
+          "id": 4,
+          "ingredientName": "flour",
+          "quantity": "4dl"
+        }
+      ],
+      "image": "",
       "instructions": "mix everything and pan fry it"
     },
     {
@@ -15,97 +35,108 @@
       "name": "banana pancakes",
       "prepTime": "15min",
       "servings": "2",
-      "ingredient1": "banana",
-      "ingredient2": "egg",
-      "ingredient3": "pinch of salt",
-      "instructions": "mix everything and pan fry it"
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "banana",
+          "quantity": "1"
+        },
+        {
+          "id": 3,
+          "ingredientName": "eggs",
+          "quantity": "1"
+        },
+        {
+          "id": 4,
+          "ingredientName": "salt",
+          "quantity": "pinch"
+        }
+      ],
+      "instructions": "mix everything and pan fry it",
+      "image": ""
     },
     {
       "id": 3,
       "name": "chicken soup",
       "prepTime": "25min",
       "servings": "4",
-      "ingredient1": "chicken",
-      "ingredient2": "vegetables",
-      "ingredient3": "water",
-      "ingredient4": "spices",
-      "instructions": "mix everything and boil it"
-    },
-    {
-      "id": 4,
-      "name": "bread",
-      "ingredient1": "flour",
-      "ingredient2": "salt",
-      "ingredient3": "water",
-      "ingredient4": "yeast",
-      "prepTime": "60min",
-      "servings": "4",
-      "instructions": "bake it"
-    },
-    {
-      "instructions": "boil gabbage, stuff it, roll it and bake in over 30min",
-      "name": "spring rolls",
-      "ingredient1": "gabbage",
-      "ingredient2": "stuffing",
-      "ingredient3": "minced meat",
-      "id": 5,
-      "prepTime": "15min",
-      "servings": "2"
-    },
-    {
-      "name": "cinnmon rolls",
-      "prepTime": "15min",
-      "servings": "2",
-      "instructions": "mix butter, flour and stuff and bake",
-      "ingredient1": "cinnamon",
-      "ingredient2": "flour",
-      "ingredient3": "egg",
-      "ingredient4": "butter",
-      "id": 6
-    },
-    {
-      "name": "salmon in oven",
-      "instructions": "plenty of salt on the fish, then thor it into oven for 20min",
-      "prepTime": "40",
-      "servings": "4",
-      "ingredient1": "salmon",
-      "ingredient2": "salt",
-      "ingredient3": "pepper",
-      "id": 7
-    },
-    {
-      "name": "Vegetarian lasagne",
-      "prepTime": "90",
-      "servings": "6",
-      "ingredient1": "lasagne pasta",
-      "ingredient2": "lentils",
-      "ingredient3": "mozzarella",
-      "ingredient4": "tomato sauce",
-      "ingredient5": "creme fraiché",
-      "instructions": "slice and fry eggplant in oil. Add tomato sauce and spices and let simmer for 20min. Crate mozzarella into creme fraiche and mix it up. Add sauce, pasta, green pesto and white sauce in layers on a dish and put it to oven in 200C for 45min. ",
-      "id": 8
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "chicken",
+          "quantity": "400gr"
+        },
+        {
+          "id": 2,
+          "ingredientName": "vegetables",
+          "quantity": "500gr"
+        },
+        {
+          "id": 3,
+          "ingredientName": "water",
+          "quantity": "1l"
+        },
+        {
+          "id": 4,
+          "ingredientName": "spices",
+          "quantity": "some"
+        }
+      ],
+      "instructions": "mix everything and boil it",
+      "image": ""
     },
     {
       "name": "mashed potato",
       "prepTime": "30",
       "servings": "4",
-      "ingredient1": "potato",
-      "ingredient2": "butter",
-      "ingredient3": "milk",
-      "ingredient4": "water",
-      "ingredient5": "",
-      "instructions": "Boil potatoes like forever, add plenmty of butter, mash that shit and voilá",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "potato",
+          "quantity": "1kg"
+        },
+        {
+          "id": 2,
+          "ingredientName": "butter",
+          "quantity": "plenty"
+        },
+        {
+          "id": 3,
+          "ingredientName": "milk/cream",
+          "quantity": "enough"
+        }
+      ],
+      "instructions": "Boil potatoes like forever, add plenty of butter, mash that shit and voilá",
+      "image": "",
       "id": 9
     },
     {
       "name": "lettutaikina",
       "prepTime": "60",
       "servings": "4",
-      "ingredient1": "jauhoja",
-      "ingredient2": "maitoa",
-      "ingredient3": "voita",
-      "ingredient4": "munia",
-      "ingredient5": "",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "jauhoja",
+          "quantity": "4dlgr"
+        },
+        {
+          "id": 2,
+          "ingredientName": "maitoa",
+          "quantity": "4dl"
+        },
+        {
+          "id": 3,
+          "ingredientName": "eggs",
+          "quantity": "2"
+        },
+        {
+          "id": 4,
+          "ingredientName": "voita",
+          "quantity": "100gr"
+        }
+      ],
+      "image": "",
       "instructions": "sekoita ja, anna turvota ja paista voissa pannulla",
       "id": 10
     },
@@ -113,11 +144,29 @@
       "name": "halloumi stew",
       "prepTime": "60",
       "servings": "4",
-      "ingredient1": "halloumi",
-      "ingredient2": "tomatosauce",
-      "ingredient3": "eggplant",
-      "ingredient4": "cumin",
-      "ingredient5": "",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "halloumi",
+          "quantity": "300gr"
+        },
+        {
+          "id": 2,
+          "ingredientName": "tomatosauce",
+          "quantity": "500ml"
+        },
+        {
+          "id": 3,
+          "ingredientName": "eggplant",
+          "quantity": "1"
+        },
+        {
+          "id": 4,
+          "ingredientName": "cumin",
+          "quantity": "2tsp"
+        }
+      ],
+      "image": "",
       "instructions": "prepare it and lurps!",
       "id": 11
     },
@@ -125,13 +174,178 @@
       "name": "risotto",
       "prepTime": "60",
       "servings": "4",
-      "ingredient1": "arborio rice",
-      "ingredient2": "parmesan",
-      "ingredient3": "butter",
-      "ingredient4": "water",
-      "ingredient5": "spices",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "arborio rice",
+          "quantity": "300gr"
+        },
+        {
+          "id": 2,
+          "ingredientName": "parmesan",
+          "quantity": "a looot"
+        },
+        {
+          "id": 3,
+          "ingredientName": "butter",
+          "quantity": "200g"
+        },
+        {
+          "id": 4,
+          "ingredientName": "water",
+          "quantity": "1,5l"
+        }
+      ],
       "instructions": "white wine on pan, add rice. Add stock little by little.",
-      "id": 12
+      "id": 12,
+      "image": ""
+    },
+    {
+      "name": "Cabbage rolls",
+      "prepTime": "45",
+      "servings": "4",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "cabbage",
+          "quantity": "4l"
+        },
+        {
+          "id": 2,
+          "ingredientName": "minced meat",
+          "quantity": "300g"
+        },
+        {
+          "id": 3,
+          "ingredientName": "porridge rice",
+          "quantity": "200g"
+        },
+        {
+          "id": 4,
+          "ingredientName": "lingonberry jam",
+          "quantity": "1"
+        }
+      ],
+      "instructions": "boil, stuff,roll and bake the cabbage in oven.",
+      "image": "https://images.ctfassets.net/0yf82hjfqumz/ExbLYYZqy4OuMmg0SoiC0/992b5493526b6d327a2ebdd6a49d187e/962becf6-cd75-5d44-aa18-995f4a6359f8.jpg?fit=fill&h=900&q=60&w=1600",
+      "id": 13
+    },
+    {
+      "name": "Mead (sima)",
+      "prepTime": "999",
+      "servings": "10",
+      "instructions": "boil water, mix in sugar, lemon juice and lemon peel. Next day bottle the mead and add a few riaisns to each bottle and pinch of sugar. Skrew caps on loosely. After couple days tighten the caps. After raisins have risen, mead is ready. ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Sima_and_tippaleip%C3%A4_2.jpg",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "water",
+          "quantity": "4l"
+        },
+        {
+          "id": 2,
+          "ingredientName": "farin suger",
+          "quantity": "300g"
+        },
+        {
+          "id": 3,
+          "ingredientName": "white sugar",
+          "quantity": "200g"
+        },
+        {
+          "id": 4,
+          "ingredientName": "lemon",
+          "quantity": "1"
+        },
+        {
+          "id": 5,
+          "ingredientName": "yeast",
+          "quantity": "5g"
+        },
+        {
+          "id": 6,
+          "ingredientName": "raisins",
+          "quantity": "handful"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "name": "vegetarian lasagne",
+      "prepTime": "90",
+      "servings": "6",
+      "incredients": [],
+      "instructions": "make tomato sauce on  a pan and add lentils. \nGrate mozzarella to creme fraiche. \nPan fry sliced aubergine.\nbut pasta, tomatosauce, mozzarellasauce, pesto in layers to a dish add cherry tomatoes on top. Bake in oven for 45min-1h. ",
+      "image": "https://images.ctfassets.net/0yf82hjfqumz/5H20DHujS0OMyOAYWMIKqu/21a5e5f2a026ee0dcaeb3c17d89b3da5/d78ff5d0-38a0-557c-b25b-68f2bb47000c.jpg?fit=fill&h=900&q=60&w=1600",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "lasagne pasta",
+          "quantity": "300gr"
+        },
+        {
+          "id": 2,
+          "ingredientName": "tomatosauce ",
+          "quantity": "500gr"
+        },
+        {
+          "id": 3,
+          "ingredientName": "cherry tomatoes",
+          "quantity": "250gr"
+        },
+        {
+          "id": 4,
+          "ingredientName": "crème fraiche",
+          "quantity": "4dl"
+        },
+        {
+          "id": 5,
+          "ingredientName": "mozzarella",
+          "quantity": "2 balls"
+        },
+        {
+          "id": 6,
+          "ingredientName": "eggplant",
+          "quantity": "1"
+        },
+        {
+          "id": 7,
+          "ingredientName": "baby spinach",
+          "quantity": "1 "
+        },
+        {
+          "id": 8,
+          "ingredientName": "pesto",
+          "quantity": "4dl"
+        },
+        {
+          "id": 9,
+          "ingredientName": "red lentils",
+          "quantity": "2dl"
+        }
+      ],
+      "id": 15
+    },
+    {
+      "name": "test burger",
+      "prepTime": "5",
+      "servings": "1",
+      "incredients": [],
+      "instructions": "test testing and try it",
+      "image": "",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "burgers",
+          "quantity": "5 "
+        },
+        {
+          "id": 2,
+          "ingredientName": "carrots",
+          "quantity": "0"
+        }
+      ],
+      "id": 16
     }
   ]
 }

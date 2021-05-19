@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import AddData from "./AddData";
 import Display from "../Display";
-import "../components.css";
 import Popup from "./Popup";
 
 class NewRecipe extends Component {
@@ -53,7 +52,8 @@ class NewRecipe extends Component {
     return (
       <div className="newRecipePage">
         <AddData fill={this.fillHandler} submit={this.popupHandler} />
-        <Display {...this.state.inputdata} />
+        <Display {...this.state.inputdata} display here />
+        <p>Duisplay should be above me</p>
         {this.state.showPopup && (
           <Popup {...this.state.inputdata} submit={this.postDataHandler} />
         )}

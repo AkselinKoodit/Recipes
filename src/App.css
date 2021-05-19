@@ -1,18 +1,35 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
 }
 body {
-  font-family: "Comfortaa", cursive;
   background-color: #f5e8c5;
   margin-top: 1rem;
   margin-left: 10vw;
   margin-right: 10vw;
+  padding-top: 2rem;
   line-height: 1.6;
+
+  background-image: url("https://source.unsplash.com/wMzx2nBdeng");
+  /* background-image: url("https://source.unsplash.com/EPwuZxdketc"); */
+  /* background-image: url("https://source.unsplash.com/Sa_uh3r-Q5w"); */
+
+  /* background-image: url("https://source.unsplash.com/qhQDWQV9lOU"); */
+
+  /* background-image: url("https://source.unsplash.com/f-TWhXOrLiU"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+body.background {
+  opacity: 0.7;
 }
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 2rem;
 }
 
 nav ul {
@@ -28,7 +45,41 @@ nav li {
 .main {
   margin-top: 5vh;
 }
-a.active {
-  color: #e07400;
+
+.active {
   font-weight: bold;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+.bg {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.navbar-light .navbar-brand {
+  color: #007bff;
+}
+
+/* .nav-tabs .nav-link.active {
+  background-image: linear-gradient(
+    rgba(236, 236, 236, 1),
+    rgba(236, 236, 236, 0)
+  );
+} */
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(
+    rgba(236, 236, 236, 1),
+    rgba(236, 236, 236, 0)
+  );
+  border-color: #dee2e6 #dee2e6 rgba(255, 255, 255, 0);
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #007bff;
+}
+.card {
+  background-color: #f8f9fad1;
 }

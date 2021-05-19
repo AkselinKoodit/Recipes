@@ -1,16 +1,35 @@
-/****logo styling*********/
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
+/****logo styling*********/
+.logo {
+  font-family: "Monoton", cursive;
+  font-weight: lighter;
+}
+/*********nav styling******/
 nav ul {
   list-style-type: none;
 }
 a:link {
   text-decoration: none;
+  margin: 5px;
 }
-nav li {
-  display: inline-block;
-  margin: 10px;
+
+a.nav-link {
+  color: #007bff !important;
 }
-/**********content*********/
+/*********hero banner video********/
+.bgVideo {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+div.row {
+  height: 10vh;
+}
+
+/*********content********/
 
 h2 {
   margin-bottom: 1rem;
@@ -25,7 +44,6 @@ footer {
 /***********recipe card styling*******/
 .recipecard {
   display: block;
-  /* flex-direction: row; */
   background-color: #f3c654;
   box-shadow: 0 0 5px #333;
   padding: 1rem;
@@ -33,13 +51,18 @@ footer {
   border-radius: 4px;
   text-align: left;
   align-items: center;
-  min-height: 400px;
+  min-height: 300px;
+  padding: 15px;
 }
 .recipecard p {
   margin: 5px;
 }
 .recipecard ul {
   margin: 5px;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 h3 {
   text-align: center;
@@ -72,6 +95,13 @@ textarea {
   margin: 1rem;
   padding: 5px;
 }
+button a {
+  color: white;
+}
+button a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 /******form styling**********/
 
 form div {
@@ -79,10 +109,27 @@ form div {
   flex-direction: row;
   justify-content: space-between;
   border-style: dotted;
-  border-color: rgb(132, 223, 253);
+  border-color: #007bff;
   border-radius: 4px;
   margin: 0.5rem;
 }
+div.form-group {
+  border-style: none;
+}
+div.col {
+  border-style: none;
+}
+div.row {
+  border-style: none;
+}
+section {
+  border-style: dotted;
+  border-color: #007bff;
+  border-radius: 4px;
+  margin: 0.5rem;
+  padding: 10px;
+}
+
 label {
   margin: 1rem;
   padding: 5px;
@@ -100,6 +147,17 @@ label {
 }
 ul {
   text-align: left;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 10px !important;
+}
+textarea {
+  width: 40vw;
 }
 /*******popup*********/
 .overlay {

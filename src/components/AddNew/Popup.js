@@ -23,7 +23,7 @@ const Popup = ({ name, instructions, prepTime, ingredient1, submit }) => {
           Instructions: <span>{instructions}</span>
         </p>
 
-        <button onClick={submit}>Post this recipe</button>
+        <button onClick={closeHandler}>Post this recipe</button>
         <button onClick={closeHandler}>Nope, don't want to post it</button>
       </div>
     </div>

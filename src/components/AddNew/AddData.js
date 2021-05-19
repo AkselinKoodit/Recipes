@@ -1,20 +1,84 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Popup from "./Popup";
+
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
 import "../components.css";
 
-const AddData = ({ submit, fill }) => {
+const AddData = () => {
+  const [newRecipe, setNewRecipe] = useState({
+    name: "",
+    prepTime: "",
+    servings: "",
+    incredients: [],
+    instructions: "",
+    image: "",
+  });
+
+  const [ingredients, setIngredients] = useState([
+    { id: 1, quantity: "", ingredientName: "" },
+  ]);
+
+  const valueChangeHandler = (e) => {
+    setNewRecipe({ ...newRecipe, [e.target.name]: e.target.value });
+  };
+
+  const ingredientChangeHandler = (e, i) => {
+    const { name, value } = e.target;
+    const list = [...ingredients];
+    list[i][name] = value;
+    setIngredients(list);
+    setNewRecipe({ ...newRecipe, ingredients: ingredients });
+  };
+  const addMore = (e) => {
+    e.preventDefault();
+    const newIng = {
+      id: ingredients.length + 1,
+      ingredientName: "",
+      quantity: "",
+    };
+    setIngredients((prevState) => [...prevState, newIng]);
+  };
+
+  const submitRecipe = (e) => {
+    e.preventDefault();
+    axios.post(
+      "https://gentle-plateau-95526.herokuapp.com/recipe/add",
+      newRecipe
+    );
+    e.target.reset();
+    //alert("Recipe added!");
+  };
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Title as="h3">Recipe posted</Popover.Title>
+      <Popover.Content>
+        You're recepie was <strong>succesfully posted</strong>. You'll find it
+        now at recepies-page.
+      </Popover.Content>
+    </Popover>
+  );
+
   return (
     <div>
       <h1>Add a new recipe:</h1>
       <div className="form">
-        <form onSubmit={submit}>
+        <form onSubmit={submitRecipe}>
           <div>
             <label htmlFor="name">Recipe name:</label>
             <input
               type="text"
               placeholder="example"
+              maxLength="30"
               name="name"
               id="name"
-              onChange={fill}
+              onChange={valueChangeHandler}
               required
             />
           </div>
@@ -22,10 +86,11 @@ const AddData = ({ submit, fill }) => {
             <label htmlFor="image">Image url (optional):</label>
             <input
               type="text"
+              maxLength="255"
               placeholder="https://exampleimages.com/example.png"
               name="image"
               id="image"
-              onChange={fill}
+              onChange={valueChangeHandler}
             />
           </div>
 
@@ -38,7 +103,7 @@ const AddData = ({ submit, fill }) => {
               id="prepTime"
               max="999"
               min="0"
-              onChange={fill}
+              onChange={valueChangeHandler}
             />
           </div>
           <div>
@@ -50,66 +115,60 @@ const AddData = ({ submit, fill }) => {
               id="servings"
               max="99"
               min="0"
-              onChange={fill}
+              onChange={valueChangeHandler}
             />
           </div>
+          <section>
+            <Form.Label>Ingredients:</Form.Label>
+            {ingredients.map((_, i) => {
+              return (
+                <Form.Group key={i}>
+                  <Row>
+                    <Col>
+                      <Form.Label htmlFor="quantity">Quantity</Form.Label>
+                      <Form.Control
+                        type="text"
+                        name="quantity"
+                        onChange={(e) => ingredientChangeHandler(e, i)}
+                      />
+                    </Col>
+                    <Col>
+                      <Form.Label htmlFor="inggredientName">
+                        Ingredient
+                      </Form.Label>
+                      <Form.Control
+                        maxLength="255"
+                        type="text"
+                        name="ingredientName"
+                        onChange={(e) => ingredientChangeHandler(e, i)}
+                      />
+                    </Col>
+                  </Row>
+                </Form.Group>
+              );
+            })}
+
+            <Button variant="secondary" onClick={addMore}>
+              add another ingredient
+            </Button>
+          </section>
           <div>
-            <label htmlFor="ingredient1">Ingredient 1:</label>
-            <input
-              type="text"
-              name="ingredient1"
-              placeholder="gabbage"
-              id="ingredient1"
-              onChange={fill}
-            />
-          </div>
-          <div>
-            <label htmlFor="ingredient2">Ingredient 2:</label>
-            <input
-              type="text"
-              name="ingredient2"
-              id="ingredient2"
-              onChange={fill}
-            />
-          </div>
-          <div>
-            <label htmlFor="ingredient3">Ingredient 3:</label>
-            <input
-              type="text"
-              name="ingredient3"
-              id="ingredient3"
-              onChange={fill}
-            />
-          </div>
-          <div>
-            <label htmlFor="ingredient4">Ingredient 4 (optional):</label>
-            <input
-              type="text"
-              name="ingredient4"
-              id="ingredient4"
-              onChange={fill}
-            />
-          </div>
-          <div>
-            <label htmlFor="ingredient5">Ingredient 5 (optional):</label>
-            <input
-              type="text"
-              name="ingredient5"
-              id="ingredient5"
-              onChange={fill}
-            />
-          </div>
-          <div>
-            <label htmlFor="instructions">Instructions:</label>
+            <label htmlFor="instructions">
+              Instructions (max 255 characters):
+            </label>
             <textarea
               name="instructions"
               placeholder="mix everything and cook it"
               id="instructions"
-              onChange={fill}
+              maxLength="255"
+              onChange={valueChangeHandler}
               required
             ></textarea>
           </div>
-          <input type="submit" value="Next" />
+          {/* <Button onClick={() => submitRecipe} value="Next"> */}
+          <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+            <Button type="submit">Add recipe</Button>
+          </OverlayTrigger>
         </form>
       </div>
     </div>
