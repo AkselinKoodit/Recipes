@@ -20,7 +20,7 @@ const Home = () => {
       <div>
         <p>
           Welcome to my recipes page! Here I'll bring you the finest, most
-          delicious vegetarian dishes to you. Using React.js and{" "}
+          delicious vegetarian dishes to your screen. Using React.js and{" "}
           <em className="strikethrough">css</em> React.bootstrap libraries I'll
           make this a thing of beauty!
         </p>
