@@ -67,6 +67,7 @@ const AddData = () => {
 
   return (
     <div>
+      <Row></Row>
       <h1>Add a new recipe:</h1>
       <div className="form">
         <form onSubmit={submitRecipe}>

@@ -4,6 +4,7 @@ import SearchBox from "./SearchBox";
 import { Switch, Route } from "react-router-dom";
 import InstructionsCard from "./InstructionsCard";
 import Spinner from "react-bootstrap/Spinner";
+import Row from "react-bootstrap/Row";
 
 //import "../components.css";
 import axios from "axios";
@@ -57,6 +58,7 @@ const RecipeList = () => {
 
   return (
     <div className="recipes">
+      <Row></Row>
       <Switch>
         <Route path="/:recipes" exact>
           <div className="card2">
