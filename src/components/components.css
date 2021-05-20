@@ -6,7 +6,7 @@ a:link {
   margin: 5px;
 }
 
-/*********hero banner video********/
+/*********landing page bg video********/
 .bgVideo {
   width: 100vw;
   position: absolute;
@@ -28,7 +28,6 @@ h2 {
 footer {
   margin-top: 10rem;
 }
-/*********recipelist styling********/
 
 /***********recipe card styling*******/
 .recipecard {
@@ -78,6 +77,10 @@ button {
   font-family: "Comfortaa", cursive;
   border-radius: 4px;
 }
+button:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
 input {
   margin: 1rem;
   padding: 5px;
@@ -94,6 +97,7 @@ button a:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
 /******form styling**********/
 
 form div {
@@ -150,33 +154,4 @@ textarea {
 }
 textarea {
   width: 40vw;
-}
-/*******popup*********/
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 50%;
-  background-color: white;
-  padding: 2rem;
-  box-shadow: 0 0 5px #333;
-  margin: 0 auto;
-}
-
-button:hover {
-  background-color: blanchedalmond;
-  border: #333 3px solid;
 }

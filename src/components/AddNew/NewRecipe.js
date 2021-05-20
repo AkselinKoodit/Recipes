@@ -1,3 +1,5 @@
+/*******THIS IS UNUSED COMPONENT ******/
+
 import React, { Component } from "react";
 import AddData from "./AddData";
 import Display from "../Display";

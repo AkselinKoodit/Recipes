@@ -1,3 +1,5 @@
+/*******THIS IS UNUSED COMPONENT ******/
+
 import React from "react";
 
 const Display = ({ name, image, prepTime, ingredient1, instructions }) => {
