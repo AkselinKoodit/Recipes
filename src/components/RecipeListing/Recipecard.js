@@ -5,8 +5,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Spinner from "react-bootstrap/Spinner";
 
-import axios from "axios";
-
 const Recipecard = (props) => {
   let info = undefined;
 

@@ -5,6 +5,9 @@ import { Switch, Route } from "react-router-dom";
 import InstructionsCard from "./InstructionsCard";
 import Spinner from "react-bootstrap/Spinner";
 import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 
 //import "../components.css";
 import axios from "axios";
@@ -26,10 +29,6 @@ const RecipeList = () => {
       .then((res) => setRecipes(res.data))
       .then(setLoaded(true));
   }, []);
-  let message = "";
-  if (!loaded) {
-    message = <Spinner animation="border" variant="primary" />;
-  }
 
   const filteredRecipes = recipes.filter((recipe) => {
     return recipe.name.toLowerCase().includes(searchInput.toLowerCase());
@@ -37,7 +36,7 @@ const RecipeList = () => {
 
   const recipesList = filteredRecipes.map((recipe) => {
     return (
-      <div>
+      <Container fluid>
         <Recipecard
           key={recipe.id}
           name={recipe.name}
@@ -52,9 +51,20 @@ const RecipeList = () => {
           instructions={recipe.instructions}
           link={recipe.id}
         />
-      </div>
+      </Container>
     );
   });
+
+  let message = "";
+  if (!loaded) {
+    message = (
+      <div>
+        Loading... <Spinner animation="border" variant="primary" />
+      </div>
+    );
+  } else {
+    message = <div className="recipelistlist">{recipesList}</div>;
+  }
 
   return (
     <div className="recipes">
@@ -66,7 +76,6 @@ const RecipeList = () => {
             <SearchBox search={searchValueHandler} />
           </div>
           <div>{message}</div>
-          <div className="recipelistlist">{recipesList}</div>
         </Route>
         <Route path="/allRecipes/:id">
           <InstructionsCard />

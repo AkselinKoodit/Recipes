@@ -14,9 +14,6 @@ a:link {
   margin: 5px;
 }
 
-a.nav-link {
-  color: #007bff !important;
-}
 /*********hero banner video********/
 .bgVideo {
   width: 100vw;
@@ -43,8 +40,8 @@ footer {
 
 /***********recipe card styling*******/
 .recipecard {
-  display: block;
-  background-color: #f3c654;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 0 5px #333;
   padding: 1rem;
   margin: 1rem;
@@ -68,9 +65,7 @@ h3 {
   text-align: center;
   margin-bottom: 1rem;
 }
-.recipecard img {
-  width: 200px;
-}
+
 .recipeImg {
   text-align: center;
 }
@@ -78,6 +73,11 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+}
+@media (max-width: 576px) {
+  .recipelistlist {
+    display: block;
+  }
 }
 button {
   margin: 1rem;
@@ -109,7 +109,7 @@ form div {
   flex-direction: row;
   justify-content: space-between;
   border-style: dotted;
-  border-color: #007bff;
+  border-color: #e9edc9;
   border-radius: 4px;
   margin: 0.5rem;
 }
@@ -124,7 +124,7 @@ div.row {
 }
 section {
   border-style: dotted;
-  border-color: #007bff;
+  border-color: #e9edc9;
   border-radius: 4px;
   margin: 0.5rem;
   padding: 10px;

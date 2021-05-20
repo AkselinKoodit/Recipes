@@ -85,6 +85,27 @@ const InstructionsCard = () => {
               {recipe.ingredients[5].ingredientName}
             </li>
           )}
+          {recipe.ingredients[6] && (
+            <li>
+              {recipe.ingredients[6].quantity}
+              {" of "}
+              {recipe.ingredients[6].ingredientName}
+            </li>
+          )}
+          {recipe.ingredients[7] && (
+            <li>
+              {recipe.ingredients[7].quantity}
+              {" of "}
+              {recipe.ingredients[7].ingredientName}
+            </li>
+          )}
+          {recipe.ingredients[8] && (
+            <li>
+              {recipe.ingredients[8].quantity}
+              {" of "}
+              {recipe.ingredients[8].ingredientName}
+            </li>
+          )}
         </ul>
         <h4>Instructions:</h4>
         <p>{recipe.instructions}</p>

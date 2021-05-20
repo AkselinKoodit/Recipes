@@ -25,11 +25,13 @@ const Home = () => {
           make this a thing of beauty!
         </p>
         <p>
-          My girlfriend is vegetarian which means I'm vegetarian. I love to cook
-          but hadn't had a lot of knowledge on vegetarian recipes before. This
-          page is made for others like me who want to cut meat off the menu but
-          are struggling to find truly tasty and filling vegetarian recipes.
-          Here I've listed the best vegetarian recipes that I've learned.
+          My girlfriend is vegetarian which pretty much means I'm vegetarian.
+          I've always loved to cook but hadn't had a lot of knowledge about
+          vegetarian recipes before. This page is made for others like me who
+          want to cut meat off the menu but are struggling to find truly tasty
+          and filling vegetarian recipes. Here I've listed the best vegetarian
+          recipes that I've learned (spoiler: the secret is cheese. A lot of
+          it).
         </p>
         <p>
           Feel free to add your own{" "}
