@@ -6,8 +6,6 @@ import RecipesList from "./RecipeListing/RecipesList";
 import AddData from "./AddNew/AddData";
 import InstructionsCard from "./RecipeListing/InstructionsCard";
 import Nav from "react-bootstrap/Nav";
-import axios from "axios";
-
 const Landing = () => {
   return (
     <div>

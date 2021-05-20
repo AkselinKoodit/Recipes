@@ -9,6 +9,10 @@ import Col from "react-bootstrap/Col";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
 import "../components.css";
+import Modal from "react-bootstrap/Modal";
+import ModalHeader from "react-bootstrap/esm/ModalHeader";
+import { ModalBody } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 
 const AddData = () => {
   const [newRecipe, setNewRecipe] = useState({
@@ -59,15 +63,14 @@ const AddData = () => {
     <Popover id="popover-basic">
       <Popover.Title as="h3">Recipe posted</Popover.Title>
       <Popover.Content>
-        You're recepie was <strong>succesfully posted</strong>. You'll find it
-        now at recepies-page.
+        You're recipe was <strong>succesfully posted</strong>. You'll find it
+        now at recipes-page.
       </Popover.Content>
     </Popover>
   );
 
   return (
-    <div>
-      <Row></Row>
+    <Container>
       <h1>Add a new recipe:</h1>
       <div className="form">
         <form onSubmit={submitRecipe}>
@@ -84,7 +87,9 @@ const AddData = () => {
             />
           </div>
           <div>
-            <label htmlFor="image">Image url (optional):</label>
+            <label htmlFor="image">
+              Image url (if empty, gets one from Unsplash.com by name):
+            </label>
             <input
               type="text"
               maxLength="255"
@@ -166,13 +171,12 @@ const AddData = () => {
               required
             ></textarea>
           </div>
-          {/* <Button onClick={() => submitRecipe} value="Next"> */}
           <OverlayTrigger trigger="click" placement="right" overlay={popover}>
             <Button type="submit">Add recipe</Button>
           </OverlayTrigger>
         </form>
       </div>
-    </div>
+    </Container>
   );
 };
 

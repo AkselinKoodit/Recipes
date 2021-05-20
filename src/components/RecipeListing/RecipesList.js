@@ -67,8 +67,8 @@ const RecipeList = () => {
   }
 
   return (
-    <div className="recipes">
-      <Row></Row>
+    <Container className="recipes">
+      {/* <Row></Row> */}
       <Switch>
         <Route path="/:recipes" exact>
           <div className="card2">
@@ -81,7 +81,7 @@ const RecipeList = () => {
           <InstructionsCard />
         </Route>
       </Switch>
-    </div>
+    </Container>
   );
 };
 export default RecipeList;

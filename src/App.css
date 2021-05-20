@@ -50,6 +50,7 @@ nav li {
 }
 .bg {
   background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
 }
 .navbar-light .navbar-brand {
   color: #007bff;
@@ -99,6 +100,11 @@ nav li {
   background-color: #606c38;
   border-color: #415b4e;
 }
+.btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #415b4e;
+  border-color: #1a221e;
+}
 a {
   color: #606c38;
 }
@@ -109,4 +115,9 @@ a:hover {
 /*****nav colors******/
 a.nav-link {
   color: #606c38;
+}
+/*****header space***/
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

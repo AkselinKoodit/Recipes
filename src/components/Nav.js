@@ -9,7 +9,7 @@ import "./components.css";
 const Navigation = () => {
   return (
     <HashRouter>
-      <Navbar collapseOnSelect expand="md">
+      <Navbar>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <IndexLinkContainer to="/">
           <Nav.Link>Akseli's specials</Nav.Link>
