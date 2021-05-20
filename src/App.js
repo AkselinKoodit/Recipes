@@ -17,8 +17,8 @@ const App = () => {
           <Navigation />
         </Row>
         <Main />
-        <Footer />
       </Router>
+      <Footer />
     </Container>
   );
 };

@@ -17,7 +17,7 @@ const Home = () => {
         </Jumbotron>
       </Row>
       <h1>Akseli's special recipes</h1>
-      <div>
+      <div className="intro">
         <p>
           Welcome to my recipes page! Here I'll bring you the finest, most
           delicious vegetarian dishes to your screen. Using React.js and{" "}

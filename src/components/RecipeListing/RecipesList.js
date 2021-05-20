@@ -67,7 +67,7 @@ const RecipeList = () => {
   }
 
   return (
-    <Container className="recipes">
+    <Container className="paddedBottom">
       {/* <Row></Row> */}
       <Switch>
         <Route path="/:recipes" exact>

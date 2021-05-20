@@ -29,6 +29,13 @@ const Recipes = () => {
     </Nav>
   );
 };
+// const OneRecipe = () => {
+//   return (
+//     <Nav>
+//       <InstructionsCard />
+//     </Nav>
+//   );
+// };
 
 const Main = () => {
   return (
@@ -46,8 +53,9 @@ const Main = () => {
           </div>
         </Route>
         <Route path="/allRecipes/:id">
-          <InstructionsCard />
-          <p>Recipe here</p>
+          <div className="newRecipePage">
+            <InstructionsCard />
+          </div>
         </Route>
       </Switch>
     </HashRouter>

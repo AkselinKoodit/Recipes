@@ -60,6 +60,15 @@ h3 {
 .recipeImg {
   text-align: center;
 }
+.instCard {
+  display: grid;
+  grid-template-columns: 2;
+  margin-top: 2rem;
+}
+.imgFit {
+  display: flex;
+  width: 400px;
+}
 .recipelistlist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

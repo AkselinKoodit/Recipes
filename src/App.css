@@ -51,6 +51,7 @@ nav li {
 .bg {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
+  min-height: 80vh;
 }
 .navbar-light .navbar-brand {
   color: #007bff;
@@ -105,8 +106,15 @@ nav li {
   background-color: #415b4e;
   border-color: #1a221e;
 }
+.btn-primary.focus,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #415b4e;
+  border-color: #1a221e;
+  box-shadow: 0 0 0 0.2rem #606c3877;
+}
 a {
-  color: #606c38;
+  color: #819443;
 }
 a:hover {
   color: #394121;
@@ -120,4 +128,30 @@ a.nav-link {
 h1 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+/*****main*******/
+.intro {
+  padding-bottom: 2rem;
+}
+.paddedBottom {
+  padding-bottom: 5rem;
+}
+
+/*****footer*****/
+.footerFix {
+  padding-top: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3e534b;
+  color: #a3b85d;
+  text-align: center;
+}
+.footerlink {
+  color: #a3b85d;
+}
+.footerlink:hover {
+  color: #b7d455;
+  text-decoration: underline;
 }

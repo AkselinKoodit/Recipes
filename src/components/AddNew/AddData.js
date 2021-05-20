@@ -70,7 +70,7 @@ const AddData = () => {
   );
 
   return (
-    <Container>
+    <Container className="paddedBottom">
       <h1>Add a new recipe:</h1>
       <div className="form">
         <form onSubmit={submitRecipe}>
