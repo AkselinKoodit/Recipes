@@ -1,5 +1,7 @@
 # Recipes app made with React.js
 
+[![build CI](https://github.com/AkselinKoodit/Recipes/actions/workflows/buildtest.yml/badge.svg?branch=main)](https://github.com/AkselinKoodit/Recipes/actions/workflows/buildtest.yml)
+
 This is a study project made using React.js. For visual side I've used React Bootstrap framework.
 Backend is build with Php & Symfony and hosted at Heroku.com (https://gentle-plateau-95526.herokuapp.com/recipe/all).
 Here's a link to the backend repo: https://github.com/AkselinKoodit/Recipes-Backend
