@@ -1,5 +1,6 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 
 const About = () => {
