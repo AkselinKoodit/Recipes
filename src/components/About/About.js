@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 const About = () => {
   return (
     <Container>
-      {/* <Row></Row> */}
       <h1>About</h1>
       <p>
         This is a study project for React course at Helsinki Business College
