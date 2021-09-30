@@ -129,7 +129,7 @@ const InstructionsCard = () => {
           </Col>
           <Col>
             <div className="imgFit">
-              {recipe.image == "" ? (
+              {recipe.image === "" ? (
                 <Card.Img
                   src={`https://source.unsplash.com/1600x900/?${recipe.name}`}
                   alt={recipe.name}

@@ -4,12 +4,8 @@ import SearchBox from "./SearchBox";
 import { Switch, Route } from "react-router-dom";
 import InstructionsCard from "./InstructionsCard";
 import Spinner from "react-bootstrap/Spinner";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
 
-//import "../components.css";
 import axios from "axios";
 
 const RecipeList = () => {

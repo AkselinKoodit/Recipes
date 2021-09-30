@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import Popup from "./Popup";
+
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -9,9 +9,6 @@ import Col from "react-bootstrap/Col";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
 import "../components.css";
-import Modal from "react-bootstrap/Modal";
-import ModalHeader from "react-bootstrap/esm/ModalHeader";
-import { ModalBody } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
 const AddData = () => {

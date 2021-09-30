@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Switch, Route, HashRouter } from "react-router-dom";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -29,13 +29,6 @@ const Recipes = () => {
     </Nav>
   );
 };
-// const OneRecipe = () => {
-//   return (
-//     <Nav>
-//       <InstructionsCard />
-//     </Nav>
-//   );
-// };
 
 const Main = () => {
   return (

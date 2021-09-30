@@ -14,7 +14,7 @@ const Recipecard = (props) => {
     info = (
       <Card key={props.id} className="recipecard">
         <Card.Title>{props.name}</Card.Title>
-        {props.image == "" ? (
+        {props.image === "" ? (
           <Card.Img
             src={`https://source.unsplash.com/1600x900/?${props.name}`}
             alt={props.name}
