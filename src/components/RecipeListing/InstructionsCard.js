@@ -29,6 +29,7 @@ const InstructionsCard = () => {
     );
     console.log("Trying to remove a recipe..." + id);
   };
+
   const removed = (
     <Popover id="popover-basic">
       <Popover.Title as="h3">Recipe removed</Popover.Title>
