@@ -16,7 +16,7 @@ jobs:
       - run: |
           npm install
           npm i axios
-          npm i bootsrap
+          npm i bootstrap
           npm i react-router-dom
           npm i react-router-bootstrap
           npm run build
